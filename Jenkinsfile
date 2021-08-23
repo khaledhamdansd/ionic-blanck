@@ -7,7 +7,8 @@ pipeline {
    stages {
       stage('NPM Setup') {
       steps {
-      echo "Publish Android API Action"
+      echo "Publish NPM Setup "
+      sh 'npm install'
       }
    }
 
