@@ -1,20 +1,20 @@
 pipeline {
    agent any
       environment {
-         Path='/usr/local/bin:/usr/bin:/bin'
+         Path='\\usr\\local\\bin:\\usr\\bin:\\bin'
       }
 
    stages {
       stage('NPM Setup') {
       steps {
-         bat 'npm install'
+      echo "Publish Android API Action"
       }
    }
 
 
    stage('Android Build') {
    steps {
-      bat 'ionic cordova build android --release'
+    echo "Publish Android API Action"
    }
   }
 
